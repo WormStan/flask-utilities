@@ -102,3 +102,12 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# IDE
+.vscode/
+
+# Log
+webservice/log/logger.log
+
+# Config File
+webapp/db_connection/config.py
