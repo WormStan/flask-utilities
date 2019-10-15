@@ -1,4 +1,4 @@
-1. User Login
+1. User Login -- Complete for basic functions, need add front-end warning message in future
 2. Video Log
 3. VSphere API
 4. Jenkins API
