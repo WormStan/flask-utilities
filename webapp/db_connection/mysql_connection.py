@@ -21,10 +21,7 @@ class MYSQL_CONN:
             database=self.db,
             charset=self.charset
         )
-        try:
-            cur = self.conn.cursor()
-        except Exception as e:
-            print(e)
+        cur = self.conn.cursor()
         return cur
 
     def execute_query(self, sql):
