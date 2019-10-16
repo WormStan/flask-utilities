@@ -51,7 +51,6 @@ class User(UserMixin):
 
         sql = "INSERT INTO user_info (`user_name`,`password`,`email`,`reg_ip`) VALUES ('{}','{}','{}','{}')".format(
             user_name, password, email, reg_ip)
-        print(sql)
         self.conn.execute_non_query(sql)
         return True
 

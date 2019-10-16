@@ -12,12 +12,11 @@ app = Flask(__name__)
 
 # Index Page
 @app.route('/')
-@login_required
 def index():
     return render_template('index.html')
 
 
-#region Error handler for 404,500
+# region Error handler for 404,500
 @app.errorhandler(500)
 def page_error(error):
     return render_template('500.html'), 500
@@ -26,10 +25,10 @@ def page_error(error):
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('404.html'), 404
-#endregion
+# endregion
 
 
-#region User Login
+# region User Login
 app.secret_key = os.urandom(24)
 login_manager = LoginManager()
 login_manager.session_protection = 'strong'
@@ -54,6 +53,8 @@ def login():
         if user.verify_password(password):
             login_user(user, remember=remember_me)
             return redirect(next or "/")
+        else:
+            flash('Invalid user name or password')
     return render_template('login.html', form=form)
 
 
@@ -75,8 +76,9 @@ def registerhandle():
     if(reg):
         return render_template('login.html', data='0', form=form)
     else:
+        flash('user name exists, please change another user name')
         return render_template('register.html', data='0')
-#endregion
+# endregion
 
 
 if __name__ == '__main__':
