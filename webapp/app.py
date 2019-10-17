@@ -1,11 +1,13 @@
 import os
+import random
+import string
 import sys
 
 from flask import *
-from flask_login import login_user, login_required, LoginManager, current_user, logout_user
+from flask_login import (LoginManager, current_user, login_required,
+                         login_user, logout_user)
 
-from user_login import User
-from user_login import LoginForm
+from user_login import LoginForm, User
 
 app = Flask(__name__)
 
@@ -76,7 +78,10 @@ def registerhandle():
     if(reg):
         return render_template('login.html', data='0', form=form)
     else:
-        flash('user name exists, please change another user name')
+        username_suffix = ''.join(random.sample(
+            string.ascii_letters + string.digits, 4))
+        flash(
+            f'user name exists, suggest user name {user_name}{username_suffix}')
         return render_template('register.html', data='0')
 # endregion
 
