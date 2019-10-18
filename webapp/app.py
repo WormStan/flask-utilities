@@ -85,6 +85,9 @@ def registerhandle():
         return render_template('register.html', data='0')
 # endregion
 
+@app.route('/bstabledemo')
+def bstabledemo():
+    return render_template('bs_table_demo.html')
 
 if __name__ == '__main__':
     app.run(debug=True, threaded=True, port=5000)

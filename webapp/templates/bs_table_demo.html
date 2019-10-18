@@ -1,0 +1,24 @@
+{% extends 'layout.html' %} {% block contentbody %}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Bootstrap Table Demo</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+                <table id="bs_table_demo" class="table">
+                </table>
+            </div>
+            <!-- /.card-body -->
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap Table -->
+<link rel="stylesheet" href="../static/plugins/bootstrap-table/bootstrap-table.min.css">
+<script src="../static/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="../static/js/bs_table_demo.js"></script>
+
+
+{% endblock contentbody %}
