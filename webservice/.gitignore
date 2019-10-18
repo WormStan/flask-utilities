@@ -108,3 +108,9 @@ venv.bak/
 
 # Log
 log/logger.log
+
+# DB Config
+models_controller/config.py
+
+# Local Test
+localtest.py

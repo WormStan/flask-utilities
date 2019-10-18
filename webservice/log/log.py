@@ -9,7 +9,7 @@ def setup_custom_logger(name):
     logger.setLevel(logging.INFO)
 
     # create file handler
-    log_path = "webservice/log/logger.log"
+    log_path = "log/logger.log"
     fh = logging.FileHandler(filename=log_path, mode='a')
 
     # create formatter
