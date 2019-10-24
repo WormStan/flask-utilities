@@ -1,4 +1,5 @@
 {% extends 'layout.html' %} {% block contentbody %}
+
 <div class="row">
     <div class="col-12">
         <div class="card">
@@ -7,18 +8,25 @@
             </div>
             <!-- /.card-header -->
             <div class="card-body">
-                <table id="bs_table_demo" class="table">
-                </table>
+                <table id="bs_table_demo"></table>
             </div>
             <!-- /.card-body -->
         </div>
     </div>
 </div>
 
-<!-- Bootstrap Table -->
-<link rel="stylesheet" href="../static/plugins/bootstrap-table/bootstrap-table.min.css">
-<script src="../static/plugins/bootstrap-table/bootstrap-table.min.js"></script>
-<script src="../static/js/bs_table_demo.js"></script>
 
+<!-- Bootstrap Table -->
+
+<!-- Required CSS -->
+<link rel="stylesheet" href="../static/plugins/bootstrap-table/bootstrap-table.min.css">
+<!-- Required Scripts -->
+<script src="../static/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="../static/plugins/bootstrap-table/extensions/multiple-sort/bootstrap-table-multiple-sort.min.js"></script>
+<script src="../static/plugins/bootstrap-table/extensions/export/tableExport.min.js"></script>
+<script src="../static/plugins/bootstrap-table/extensions/export/bootstrap-table-export.min.js"></script>
+<script src="../static/plugins/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
+<!-- Custom Scripts -->
+<script src="../static/js/bs_table_demo.js"></script>
 
 {% endblock contentbody %}
