@@ -2,10 +2,11 @@ FROM python:3
 
 WORKDIR /usr/src/app
 
-COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
+RUN git clone "https://github.com/WormStan/flask-utilities.git" "flask-utilities"
 
-COPY . .
+RUN pip install --no-cache-dir -r "./flask-utilities/webservice/requirements.txt"
 
-CMD ["gunicorn","service:app","-c","./gunicorn.conf.py"]
+WORKDIR /usr/src/app/flask-utilities/webservice
+
+CMD git pull && gunicorn service:app -c gunicorn.conf.py
 
