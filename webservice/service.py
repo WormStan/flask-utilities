@@ -12,7 +12,7 @@ api.add_resource(DataBaseApi, '/DataBaseApi')
 
 @app.route('/')
 def index():
-    return "Test Failed"
+    return "Test Success"
 
 if __name__ == '__main__':
     app.run(debug=True, threaded=True, port=5001)
