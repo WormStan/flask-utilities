@@ -86,6 +86,7 @@ def registerhandle():
 # endregion
 
 @app.route('/bstabledemo')
+@login_required
 def bstabledemo():
     return render_template('bs_table_demo.html')
 
