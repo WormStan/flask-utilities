@@ -105,6 +105,3 @@ venv.bak/
 
 # IDE
 .vscode/
-
-# Config File
-db_connection/config.py

@@ -1,6 +1,8 @@
 aniso8601==8.0.0
 autopep8==1.4.4
+cffi==1.13.2
 Click==7.0
+cryptography==2.8
 Flask==1.1.1
 Flask-Admin==1.5.3
 Flask-Login==0.4.1
@@ -10,6 +12,7 @@ itsdangerous==1.1.0
 Jinja2==2.10.3
 MarkupSafe==1.1.1
 pycodestyle==2.5.0
+pycparser==2.19
 PyMySQL==0.9.3
 pytz==2019.3
 six==1.12.0
