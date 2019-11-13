@@ -1,4 +1,4 @@
-HOST = '172.17.0.1'
+HOST = 'localhost'
 PORT = 3306
 USER = 'root'
 PWD = '123456'
