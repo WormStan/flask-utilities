@@ -30,7 +30,7 @@
     <script src="../static/js/adminlte.min.js"></script>
 </head>
 
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition sidebar-mini sidebar-collapse layout-fixed">
     <div class="wrapper">
 
         <!-- Navbar -->
@@ -118,7 +118,7 @@
                             <a href="#" class="nav-link active">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
-                                    Starter Pages
+                                    Demo Pages
                                     <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
@@ -130,9 +130,9 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="{{url_for('echartsdemo')}}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Inactive Page</p>
+                                        <p>ECharts</p>
                                     </a>
                                 </li>
                             </ul>
@@ -195,6 +195,8 @@
         <aside class="control-sidebar control-sidebar-dark">
             <!-- Control sidebar content goes here -->
             <div class="p-3">
+                <br>
+                <br>
                 <h4>Milestones</h4>
                 <p>Big Event Records</p>
                 <h5>10/11/2019</h5>
@@ -202,6 +204,9 @@
                 <hr>
                 <h5>11/1/2019</h5>
                 <li>Use docker as webservice host</li>
+                <hr>
+                <h5>11/18/2019</h5>
+                <li>Hold jenkins server in docker for use api</li>
             </div>
         </aside>
         <!-- /.control-sidebar -->

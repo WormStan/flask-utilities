@@ -90,5 +90,10 @@ def registerhandle():
 def bstabledemo():
     return render_template('bs_table_demo.html')
 
+@app.route('/echartsdemo')
+@login_required
+def echartsdemo():
+    return render_template('echarts_demo.html')
+
 if __name__ == '__main__':
     app.run(debug=True, threaded=True, port=5000)
