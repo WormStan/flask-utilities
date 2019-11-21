@@ -20,7 +20,6 @@ class BS_Test(ModelBase):
     def __repr__(self):
         return f"ID is: '{self.id}' \nstring_col is: '{self.string_col}'"
 
-
 dbm = DB_Manager()
 engine = dbm.engine
 ModelBase.metadata.create_all(engine)

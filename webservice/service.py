@@ -3,12 +3,14 @@ from flask_cors import CORS
 from flask_restful import Api
 
 from restful_api_collection.database_api import DataBaseApi
+from restful_api_collection.echarts_api import EchartsApi
 
 app = Flask(__name__)
 CORS(app)
 api = Api(app)
 
 api.add_resource(DataBaseApi, '/DataBaseApi')
+api.add_resource(EchartsApi,'/EchartsApi/<string:type>')
 
 @app.route('/')
 def index():
