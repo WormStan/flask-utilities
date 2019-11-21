@@ -1,6 +1,6 @@
-1. User Login -- Complete for basic functions, need add front-end warning message in future
+1. User Login -- Completed
 2. Video Log
 3. VSphere API
 4. Jenkins API
 5. DB Controller
-6. Charts
+6. Charts -- Finish pie charts
