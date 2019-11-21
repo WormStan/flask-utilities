@@ -7,7 +7,7 @@ logger = log.setup_custom_logger('echarts_api')
 echarts_data = {
     'pie': {
         'legend': ['passed', 'failed', 'blocked'],
-        'data': [{'value': 35, 'name': 'passed'}, {'value': 60, 'name': 'failed'}, {'value': 70, 'name': 'blocked'}],
+        'data': [{'value': 78, 'name': 'passed'}, {'value': 60, 'name': 'failed'}, {'value': 70, 'name': 'blocked'}],
     },
     'line': {},
     'bar': {},
