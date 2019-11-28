@@ -1,0 +1,28 @@
+<log>
+    <entries>
+        <entry>
+            <action>Init</action>
+            <timestamp>2019-11-25T00:00:00</timestamp>
+        </entry>
+        <entry>
+            <action>Create new folder</action>
+            <timestamp>2019-11-25T00:00:05</timestamp>
+        </entry>
+        <entry>
+            <action>Create test file</action>
+            <timestamp>2019-11-25T00:00:10</timestamp>
+        </entry>
+        <entry>
+            <action>Edit test file</action>
+            <timestamp>2019-11-25T00:00:15</timestamp>
+        </entry>
+        <entry>
+            <action>Save test file</action>
+            <timestamp>2019-11-25T00:00:22</timestamp>
+        </entry>
+        <entry>
+            <action>Clean Up</action>
+            <timestamp>2019-11-25T00:00:25</timestamp>
+        </entry>
+    </entries>
+</log>

@@ -7,7 +7,8 @@ from flask import *
 from flask_login import (LoginManager, current_user, login_required,
                          login_user, logout_user)
 
-from user_login import LoginForm, User
+from tools.user_login import LoginForm, User
+from tools.video_parser import VideoParser
 
 app = Flask(__name__)
 
@@ -94,6 +95,13 @@ def bstabledemo():
 @login_required
 def echartsdemo():
     return render_template('echarts_demo.html')
+
+@app.route('/videodemo')
+@login_required
+def videodemo():
+    vp = VideoParser()
+    log_list = vp.log_parser(log_path='static/video/log.xml')
+    return render_template('video_demo.html',log_list=log_list)
 
 if __name__ == '__main__':
     app.run(debug=True, threaded=True, port=5000)
